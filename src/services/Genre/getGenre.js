@@ -1,4 +1,4 @@
-import data from '../data/feature-films.json'
+import data from '../../data/feature-films.json'
 
 export function getGenre() {
 	console.log('min genredata', data)
