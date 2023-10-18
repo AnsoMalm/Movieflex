@@ -6,7 +6,7 @@ const Header = () => {
 
 	return (
 		<header>
-			<h1>MovieFlex</h1>
+			<h1 className='header-movie'>MovieFlex</h1>
 			<div className='menu-bar-container'>
 				<a href="#"
 				className='menu-bar'>

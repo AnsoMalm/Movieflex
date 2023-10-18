@@ -5,7 +5,7 @@ header {
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: black;
 }
-h1 {
+.header-movie {
 	color: white; 
 }
 
@@ -21,6 +21,6 @@ h1 {
 .menu-bar { 
 	color: white; 
 	text-decoration: none;
-	padding: 1em; 
+	padding: 0em 1em; 
 	font-weight: bold;
 }
