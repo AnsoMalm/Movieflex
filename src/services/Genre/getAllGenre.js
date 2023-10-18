@@ -2,11 +2,6 @@ import data1 from '../../data/documentaries.json'
 import data2 from '../../data/feature-films.json'
 import data3 from '../../data/specials.json'
 
-// let allGenreData = data1.concat(data2, data3)
-
-// let result = getGenreData(allGenreData)
-// console.log('alla mina genre', allGenreData)
-
 export function getGenreData() {
 
 	let genreCount = {
@@ -25,7 +20,7 @@ export function getGenreData() {
 	return {
 		labels: labels, 
 		datasets: [{
-			label: 'Antal filmer i varje genre', 
+			label: 'Antal filmer', 
 			data: datasetData, 
 			backgroundColor: ['#44EB7E', '#88EB44', '#EB4495'],
 		}
