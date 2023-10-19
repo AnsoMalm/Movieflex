@@ -28,16 +28,25 @@ export function getMoviesRunTime(data, label) {
 	const labels = sortedData.map((movie, index) => index)
 	const runtimes = sortedData.map(movie => movie.Runtime)
 	
+	const allData = [data1, data2, data3]
+	const labelsName = ['Special tisdlängd', 'Dokumentärernas tidslängd', 'Features Films tidslängd']
+
+	const allDatasets = allData.map((data, index) => {
+		const formattedData = getMoviesRunTime(data, labels[index])
+		return formattedData.datasets[0]; 
+	})
+
 	return {
-		labels: labels,
+		labels: allData[0].labelsName,
 		datasets: [{
 			label: label,
-			data: , 
+			data: allDatasets, 
 			backgroundColor: ['#D26277'], 
 			borderColor: ['#F8B2D5']
 		}]
 	}
+
 }
-const specialsData = getMoviesRunTime(data, 'Specials tidslängd');
-const documentariesData = getMoviesRunTime(data1, 'Dokumentärers tidslängd')
-const featureFilmsData = getMoviesRunTime(data2, 'Feature Films tidslängd')
+const specialsData = getMoviesRunTime(data1, 'Specials tidslängd');
+const documentariesData = getMoviesRunTime(data2, 'Dokumentärers tidslängd')
+const featureFilmsData = getMoviesRunTime(data3, 'Feature Films tidslängd')
