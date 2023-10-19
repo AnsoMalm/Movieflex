@@ -22,8 +22,8 @@ const SearchMovie = () => {
 	// const filterAllMovies = movieData.filter((movie) => movie.Title.toLowerCase().includes(searchValue.toLowerCase()))
 
 		return (
-			<main>
-				<section className='search-container'>
+			<>
+			<section className='search-container'>
 				<label>Sök efter din favoritfilm:</label>
 					<input 
 					onChange={handleChange}
@@ -31,9 +31,9 @@ const SearchMovie = () => {
 					type="text"
 					placeholder='ex. HorrorNight'>
 					</input>
-				</section>
-				<div className='movie-container'></div>
-			</main>
+			</section>
+			<div className='movie-container'></div>
+			</>
 		)
 	}
 
