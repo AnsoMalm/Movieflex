@@ -1,6 +1,6 @@
 import data from '../../data/feature-films.json'
 
-export function getGenre() {
+export function getGenre(numGenres) {
 	console.log('min genredata', data)
 
 	const genreCount = data.reduce((acc, obj) => {
@@ -13,7 +13,8 @@ export function getGenre() {
 		return acc;
 	}, {})
 
-	const labels = Object.keys(genreCount)
+	const labels = Object.keys(genreCount).slice(0, numGenres)
+	console.log('min ändrade label', labels)
 
 	const datasetData = labels.map(label => genreCount[label])
 

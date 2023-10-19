@@ -8,13 +8,9 @@ function countPremieres(data) {
 		return data.reduce((acc, obj) => {
 		const date = new Date(obj.Premiere)
 		const month = date.getMonth()
-		if(acc[month]) {
-			acc[month] += 1
-		} else {
-			acc[month] = 1; 
-		}
+		acc[month] += 1
 		return acc
-	}, {})
+	}, Array(12).fill(0))
 }
 
 export function getPremiere() {

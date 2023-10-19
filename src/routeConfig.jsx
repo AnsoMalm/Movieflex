@@ -3,7 +3,7 @@ import Root from './routes/Root.jsx'
 import Home from './routes/Home.jsx'
 import SearchMovie from "./routes/SearchMovie.jsx";
 import MovieLanguage from './routes/MovieLanguage.jsx'
-import Genre from './routes/Genre.jsx'
+import Genre from './routes/Genre/Genre.jsx'
 import Premier from './routes/Premiere.jsx'
 import MovieRuntime from './routes/MoviesRuntime.jsx'
 
