@@ -1,7 +1,6 @@
 import { createHashRouter } from "react-router-dom";
 import Root from './routes/Root.jsx'
-import Home from './routes/Home.jsx'
-import SearchMovie from "./routes/SearchMovie.jsx";
+import Home from './routes/Home/Home.jsx'
 import MovieLanguage from './routes/MovieLanguage.jsx'
 import Genre from './routes/Genre/Genre.jsx'
 import Premier from './routes/Premiere.jsx'

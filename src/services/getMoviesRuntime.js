@@ -1,6 +1,4 @@
-import data1 from '../data/specials.json'
-import data2 from '../data/documentaries.json'
-import data3 from '../data/feature-films.json'
+import data from '../data/specials.json'
 
 
 function convertToMinutes(runtime) {
@@ -14,7 +12,7 @@ function convertToMinutes(runtime) {
 	}
 } 
 
-export function getMoviesRunTime(data, label) {
+export function getMoviesRunTime() {
 	const convertedData = data.map(movie => {
 		const runtimeinMinutes = convertToMinutes(movie.Runtime);
 		return {
@@ -28,25 +26,16 @@ export function getMoviesRunTime(data, label) {
 	const labels = sortedData.map((movie, index) => index)
 	const runtimes = sortedData.map(movie => movie.Runtime)
 	
-	const allData = [data1, data2, data3]
-	const labelsName = ['Special tisdlängd', 'Dokumentärernas tidslängd', 'Features Films tidslängd']
 
-	const allDatasets = allData.map((data, index) => {
-		const formattedData = getMoviesRunTime(data, labels[index])
-		return formattedData.datasets[0]; 
-	})
 
 	return {
-		labels: allData[0].labelsName,
+		labels: labels,
 		datasets: [{
-			label: label,
-			data: allDatasets, 
+			label: 'Dokumentärernas tidslängd',
+			data: runtimes, 
 			backgroundColor: ['#D26277'], 
 			borderColor: ['#F8B2D5']
 		}]
 	}
 
 }
-const specialsData = getMoviesRunTime(data1, 'Specials tidslängd');
-const documentariesData = getMoviesRunTime(data2, 'Dokumentärers tidslängd')
-const featureFilmsData = getMoviesRunTime(data3, 'Feature Films tidslängd')
