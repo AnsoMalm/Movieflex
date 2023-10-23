@@ -23,19 +23,38 @@ export function getMoviesRunTime() {
 	
 	const sortedData = convertedData.sort((a,b) => a.Runtime - b.Runtime)
 	
-	const labels = sortedData.map((movie, index) => index)
-	const runtimes = sortedData.map(movie => movie.Runtime)
+	const movies = sortedData.map((movie, index) => ({
+		label: index,
+		runtime: movie.Runtime, 
+		title: movie.Title
+	}))
+	const labels = movies.map(movie => movie.label)
+	const runtimes = movies.map(movie => movie.runtime)
+	// const labels = sortedData.map((movie, index) => index)
+	// const runtimes = sortedData.map(movie => movie.Runtime)
+
+	console.log('min labels ', labels)
 	
-
-
 	return {
 		labels: labels,
 		datasets: [{
-			label: 'Dokumentärernas tidslängd',
+			label: 'Specials tidslängd',
 			data: runtimes, 
 			backgroundColor: ['#D26277'], 
 			borderColor: ['#F8B2D5']
-		}]
+		}],
+		options: {
+			plugins: {
+				tooltip: {
+					callbacks: {
+						label: function(context) {
+							const movie = movies[context.dataIndex]
+							return `Film: ${movie.title}, Tidslängd: ${movie.runtime} minuter`;
+						}
+					}
+				}
+			}
+		}
 	}
-
 }
+

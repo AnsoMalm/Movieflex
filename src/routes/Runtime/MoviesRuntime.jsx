@@ -10,7 +10,7 @@ const MoviesRunTime = () => {
 	return (
 		<section className='runtime-container'>
 			<h2>Hur lång filmerna är: </h2>
-			<Line data={moviesLineConfig}/>
+			<Line data={moviesLineConfig} options={moviesLineConfig.options}/>
 		</section>
 	)
 }
