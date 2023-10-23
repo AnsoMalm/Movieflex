@@ -1,0 +1,9 @@
+.language-container {
+	margin: 4em; 
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40em; 
+	height: 35em; 
+}
