@@ -35,7 +35,7 @@ const SearchMovie = () => {
 			<div className='movie-container'>
 				<ul className='movie-list'>
 					{matchesMovie.map((movie, index) => (
-						<li key={index}>
+						<li key={index} style={{animationDelay: `${index * 0.3}s`}}>
 							<div className='movie-titel'>{movie.Title}</div> 
 							<div className='movie-desc'>
 								<div>Premiär: {movie.Premiere}</div>

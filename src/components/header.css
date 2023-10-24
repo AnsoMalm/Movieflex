@@ -41,9 +41,6 @@ header {
 }
 
 
-
-
-
 header nav {
 	margin-top: 5em; 
 	padding: 0;
@@ -65,13 +62,14 @@ header nav a {
 	font-weight: bold;
 	text-decoration: none;
 	color: rgb(143, 82, 133); 
+	transition: all 0.5s ease-in ; 
 }
 header nav a:hover, 
 header nav a.active {
 	background-color: rgb(121, 92, 135);
 	cursor: pointer;
 	transform: translateY(-0.4em);
-	box-shadow: 0em 0.4em 0.3em rgb(113, 37, 109);
+	box-shadow: 0em 0.4em 0.3em rgb(161, 64, 156);
 	color: black; 
 }
 header nav a:first-child {
