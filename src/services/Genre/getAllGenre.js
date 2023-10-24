@@ -1,6 +1,7 @@
 import data1 from '../../data/documentaries.json'
 import data2 from '../../data/feature-films.json'
 import data3 from '../../data/specials.json'
+import colors from '../../data/colors.js'
 
 const allData = data2.concat(data3)
 console.log('detta är min genre data data2, data3', allData)
@@ -33,7 +34,7 @@ export function getGenreData() {
 		datasets: [{
 			label: 'Antal filmer', 
 			data: datasetData, 
-			backgroundColor: ['#44EB7E', '#88EB44', '#EB4495'],
+			backgroundColor: Object.values(colors),
 		}], 
 		options: {
 			scales: {

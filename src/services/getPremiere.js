@@ -26,20 +26,20 @@ export function getPremiere() {
 		datasets: [{
 			label: 'Dokumentärernas Premiärer',
 			data: Object.values(monthCount1),
-			backgroundColor: ['rgba(75, 192, 192, 0.2)'],
-			borderColor: ['rgb(75, 192, 192)'] 
+			backgroundColor: ['rgba(255, 182, 193, 0.8)'],
+			borderColor: ['rgb(255, 182, 193)'] 
 		}, 
 		{
 			label: 'Feauture Films Premiärer',
 			data: Object.values(monthCount2),
-			backgroundColor: ['rgba(54, 162, 235, 0.2)'],
-			borderColor: ['rgb(54, 162, 235)']
+			backgroundColor: ['rgba(255, 160, 122, 0.8)'],
+			borderColor: ['rgb(255, 160, 122)']
 		},
 		{
 			label: 'Specials Premiärer',
 			data: Object.values(monthCount3),
-			backgroundColor: ['rgba(153, 102, 255, 0.2)'],
-			borderColor: ['rgb(153, 102, 255)'] 
+			backgroundColor: ['rgba(240, 230, 140, 0.8)'],
+			borderColor: ['rgb(240, 230, 140)'] 
 		}]
 
 	}

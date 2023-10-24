@@ -1,4 +1,5 @@
 import data from '../../data/feature-films.json'
+import colors from '../../data/colors.js'
 
 export function getGenre(numGenres) {
 	console.log('min genredata', data)
@@ -23,7 +24,7 @@ export function getGenre(numGenres) {
 		datasets: [{
 			label: 'Genrer i Features-filmer',
 			data: datasetData,
-			backgroundColor: ['#ECFF00','#AD0000','#B8FF00','#FFEE00', '#FFC900','#FFC900','#FF7700', '#FF4300', '#FF1100', '#C80000',], 
+			backgroundColor: Object.values(colors), 
 		}]
 	}
 }

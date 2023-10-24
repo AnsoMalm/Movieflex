@@ -25,7 +25,7 @@ const SearchMovie = () => {
 		return (
 			<>
 			<section className='search-container'>
-				<label>Sök efter din favoritfilm:</label>
+				<label>Sök efter filmer här:</label>
 					<input 
 					onChange={handleChange}
 					className='search-input'
@@ -51,5 +51,3 @@ const SearchMovie = () => {
 	}
 
 export default SearchMovie
-
-/*// placeholder='ex. HorrorNight' */

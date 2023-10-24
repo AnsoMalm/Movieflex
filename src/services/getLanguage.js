@@ -1,6 +1,7 @@
 import data1 from '../data/documentaries.json'
 import data2 from '../data/feature-films.json'
 import data3 from '../data/specials.json'
+import colors from '../data/colors.js'
 
 let allData = data1.concat(data2, data3)
 
@@ -32,7 +33,7 @@ export function getLanguage() {
 		datasets: [{
 			label: 'All Movie Languages', 
 			data: datasetData,
-			backgroundColor: ['#ECFF00','#AD0000','#B8FF00','#FFEE00', '#FFC900','#FFC900','#FF7700', '#FF4300', '#FF1100', '#C80000', ]
+			backgroundColor: Object.values(colors)
 		}]
 	}
 }

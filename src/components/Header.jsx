@@ -4,7 +4,9 @@ const Header = () => {
 
 	return (
 		<header>
-			<h1>MovieFlex</h1>
+			<div className='header-movie'>
+				<h1 className='movie-flex'>MovieFlex</h1>
+			</div>
 			<nav>
 					<NavLink to="/">Home</NavLink>
 
@@ -21,25 +23,3 @@ const Header = () => {
 }
 
 export default Header
-
-{/* <div className='menu-bar-container'>
-	<a href="#"
-	className='menu-bar'>
-		Olika Språk</a>
-	<a href="#" 
-		className='menu-bar'>
-		Filmernas premiärer
-	</a>
-	<a href='#'
-	className='menu-bar'>
-		Filmers tidslängd
-	</a>
-	<a href='#'
-	className='menu-bar'>
-		Special-filmers genrerar
-	</a>
-	<a href='#'
-	className='menu-bar'>
-		Våra genrerar
-	</a>
-</div> */}
