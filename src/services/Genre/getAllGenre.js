@@ -23,9 +23,6 @@ export function getGenreData() {
 
 	const datasetData = Object.values(genreCount)
 
-	console.log('labels', labels)
-	console.log('datasetDATA:', datasetData)
-
 	return {
 		labels: labels, 
 		datasets: [{
@@ -44,10 +41,11 @@ export function getGenreData() {
 					}
 				}, 
 				y: {
+					beginAtZero: true,
 					title: {
 						display: true, 
 						text: 'Genre'
-					}	
+					}
 				}
 			}
 			

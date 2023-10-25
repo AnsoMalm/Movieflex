@@ -30,7 +30,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transition: all 1s ease-in-out;
+	transition: all 0.3s ease-in;
 }
 
 .movie-container ul li:hover {
