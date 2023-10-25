@@ -3,7 +3,12 @@ import data2 from '../../data/feature-films.json'
 import data3 from '../../data/specials.json'
 import colors from '../../data/colors.js'
 
-const allData = data2.concat(data3)
+const documentariesWithGenre = data1.map(doc => ({
+	...doc, 
+	Genre: 'Dokumentärer'
+}))
+
+const allData = data2.concat(data3, documentariesWithGenre)
 console.log('detta är min genre data data2, data3', allData)
 
 export function getGenreData() {
@@ -19,14 +24,18 @@ export function getGenreData() {
 		return acc; 
 	}, {})
 
-	const labels = Object.keys(genreCount)
+	const sortedGenreCount = Object.entries(genreCount).map(([genre, count]) => ({
+		genre, count
+	})); 
+	sortedGenreCount.sort((a, b) => b.count - a.count)
 
-	const datasetData = Object.values(genreCount)
+	const labels = sortedGenreCount.map(obj => obj.genre); 
+	const datasetData = sortedGenreCount.map(obj => obj.count)
 
 	return {
 		labels: labels, 
 		datasets: [{
-			label: 'Antal filmer', 
+			label: 'Alla våra genrer', 
 			data: datasetData, 
 			backgroundColor: Object.values(colors),
 		}], 
