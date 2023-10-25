@@ -10,25 +10,22 @@ export function getGenreData() {
 	const allDataWithGenre = allData.filter(obj => obj.Genre)
 
 	const genreCount = allDataWithGenre.reduce((acc, obj) => {
-		const genres = obj.Genre.split(" / ")
-		genres.forEach( genre => {
-			if(acc[genre]) {
-				acc[genre] += 1
-			} else {
-				acc[genre] = 1
-			}
-		}) 
+		const genre = obj.Genre; 
+		if(acc[genre] ) {
+			acc[genre] += 1
+		} else {
+			acc[genre] = 1
+		}
 		return acc; 
 	}, {})
 
-	const sortedGenreData = Object.entries(genreCount).sort((a,b) => a[1] - b[1])
-	console.log('min sortedgenredata', sortedGenreData)
+	const labels = Object.keys(genreCount)
 
-	const labels = sortedGenreData.map(item => item[0])
+	const datasetData = Object.values(genreCount)
 
-	const datasetData = sortedGenreData.map(item => item[1])
+	console.log('labels', labels)
+	console.log('datasetDATA:', datasetData)
 
-	console.log('datasetDATA', datasetData)
 	return {
 		labels: labels, 
 		datasets: [{
@@ -37,17 +34,23 @@ export function getGenreData() {
 			backgroundColor: Object.values(colors),
 		}], 
 		options: {
+			type: 'bar',
+			indexAxis: 'y', 
 			scales: {
 				x: {
-					type: 'linear', 
-					position: 'bottom'
-				},
+					title: {
+						display: true, 
+						text: 'Antal Filmer'
+					}
+				}, 
 				y: {
-					type: 'category', 
-					position: 'left', 
-				},
-
+					title: {
+						display: true, 
+						text: 'Genre'
+					}	
+				}
 			}
+			
 		}
 	}
 }

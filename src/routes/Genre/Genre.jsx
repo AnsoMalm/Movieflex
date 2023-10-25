@@ -1,6 +1,6 @@
 import {Chart as ChartJS, ArcElement, Tooltip, Legend, BarElement, LinearScale, CategoryScale, Title} from 'chart.js'
 ChartJS.register(ArcElement, Tooltip, Legend, BarElement, LinearScale, CategoryScale, Title )
-import { Doughnut } from 'react-chartjs-2'
+import { Doughnut} from 'react-chartjs-2'
 import { Bar } from 'react-chartjs-2'
 import { getGenre } from '../../services/Genre/getGenre'
 import { getGenreData } from '../../services/Genre/getAllGenre'
