@@ -9,8 +9,8 @@ const pieLanguageConfig = getLanguage()
 const MovieLanguage = () => {
 	return (
 		<section className='language-container'>
-			<h2>Olika språk i alla filmer</h2>
-			<Pie data={pieLanguageConfig}/>
+			<h2 className='language-text'>Olika språk i alla filmer</h2>
+			 <Pie className="pie-box" data={pieLanguageConfig} />
 		</section>
 	)
 }

@@ -3,6 +3,57 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 40em; 
+	width: 50em; 
 	height: 35em; 
 }
+
+.premier-text {
+	visibility: hidden;
+	animation: slide-down 1s forwards; 
+	animation-delay: 1s;
+}
+
+@keyframes slide-down {
+	0% { 
+		opacity: 0;
+		transform: translateY(-100%)}
+	100% {
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0)
+	}
+}
+
+.premier-bar-box {
+	width: 100%; 
+    height: 100%; 
+	animation: premierAnimation 1.5s ease; 
+}
+@keyframes premierAnimation {
+	0% {
+	  transform: scale(0.01);
+	  transform-origin: center;
+	}
+	30% {
+	  transform: scale(1.2); /* Ökad initial skalfaktor */
+	  transform-origin: center;
+	}
+	50% {
+	  transform: scale(0.8); /* Minskad skalfaktor */
+	  transform-origin: center;
+	}
+	70% {
+	  transform: scale(1.1); /* Ökad skalfaktor */
+	  transform-origin: center;
+	}
+	85% {
+	  transform: scale(0.95); /* Lätt minskad skalfaktor */
+	  transform-origin: center;
+	}
+	100% {
+	  transform: scale(1);
+	  transform-origin: center;
+	}
+  }
+
+ 

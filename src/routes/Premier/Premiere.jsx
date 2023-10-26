@@ -9,8 +9,10 @@ const barPremiereConfig = getPremiere()
 const Premiere = () => {
 	return (
 		<section className="premier-chart-container">
-			<h2>Vilka premiärer som filmerna har:</h2>
+			<h2 className='premier-text'>Vilka premiärer som filmerna har:</h2>
+			<div className='premier-bar-box'>
 			<Bar data ={barPremiereConfig}/>
+			</div>
 		</section>
 	)
 }
