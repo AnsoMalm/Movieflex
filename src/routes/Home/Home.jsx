@@ -7,7 +7,8 @@ const Home = () => {
     <>
 	     <section className='header-container'>
         <h1>Välkommen till våra fräscha och nya streamningtjänst!</h1>
-        <p>Vilka filmer är du sugen på idag? Här finns allt i det mesta som du kan tänka dig. </p>
+        <p>På denna sidan har vi samlat all vår filmdata. Vid varje flik du får mer info om vår data.</p>
+        <p>Här nedanför kan du söka efter vårt utbud av filmer. </p>
       </section>
       <SearchMovie />
     </>

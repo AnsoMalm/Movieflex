@@ -4,12 +4,12 @@ import { Outlet } from 'react-router-dom'
 const Root = () => {
 
 	return (
-		<>
+		<body>
 		<Header />
 		<main>
 			<Outlet />
 		</main>
-		</>
+		</body>
 	)
 }
 

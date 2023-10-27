@@ -3,16 +3,17 @@
 	margin: 0; 
 }
 body {
-	background-color: rgb(48, 43, 43);
+	background-image: url('./assets/movie-background2.jpg');
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 main {
-	background-color: rgb(247, 244, 244);
+	background-color: rgb(220, 209, 231);
 	display: flex; 
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center; 
-	/* margin: 0em 10em ;  */
+	margin: 0em 5em ; 
+	border-radius: 10px; 
 }
 
 h1, h2 {

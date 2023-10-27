@@ -33,9 +33,10 @@ const SearchMovie = () => {
 					/>
 			</section>
 			<div className='movie-container'>
-				<ul className='movie-list'>
+				<ul className={matchesMovie.length === 1 ? 'single-movie' : 'movie-list'}>
 					{matchesMovie.map((movie, index) => (
-						<li key={index} style={{animationDelay: `${index * 0.3}s`}}>
+						<li key={index} 
+							style={{animationDelay: `${index * 0.3}s`}}>
 							<div className='movie-titel'>{movie.Title}</div> 
 							<div className='movie-desc'>
 								<div>Premiär: {movie.Premiere}</div>
