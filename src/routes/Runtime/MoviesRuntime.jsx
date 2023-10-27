@@ -9,7 +9,7 @@ const moviesLineConfig = getMoviesRunTime()
 const MoviesRunTime = () => {
 	return (
 		<section className='runtime-container'>
-			<h2 className='runtime-text'>Hur lång filmerna är: </h2>
+			<h2 className='runtime-text'>Tidslängd på filmerna: </h2>
 			<div className='line-container'>
 			<Line data={moviesLineConfig} options={moviesLineConfig.options}/>
 			</div>

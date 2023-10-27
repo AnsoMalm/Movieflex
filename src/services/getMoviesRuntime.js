@@ -40,8 +40,8 @@ export function getMoviesRunTime() {
 		datasets: [{
 			label: 'Specials tidslängd',
 			data: runtimes, 
-			backgroundColor: ['#D26277'], 
-			borderColor: ['#F8B2D5']
+			backgroundColor: ['#CA35A9'], 
+			borderColor: ['rgb(143, 82, 140)']
 		}],
 		options: {
 			plugins: {

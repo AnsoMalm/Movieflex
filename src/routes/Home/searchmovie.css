@@ -29,7 +29,7 @@
 }
 .search-input {
 	padding: 0.5em; 
-	margin-bottom: 1em; 
+	margin-bottom: 2em; 
 	border: 1px solid grey; 
 	border-radius: 2em;
 	font-size: 1em; 
@@ -53,7 +53,7 @@
 
 .movie-list {
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -64,15 +64,15 @@
 	 
 }
 .movie-container .single-movie li {
-	margin: 0.5em; 
+	margin: 0em 1em 3em 1em; 
 	padding: 2em;
-	border: 2px solid rgba(243, 181, 164, 0.8); 
-	background-color: rgba(252, 240, 206, 0.8);
+	border: 2px solid rgba(45, 21, 59, 0.8); 
+	background-color: rgba(163, 92, 183, 0.8);
 	border-radius: 10px; 
 	width: 15em; 
 	height: 10em; 
 	list-style: none; 
-	box-shadow: 10px 10px 20px 2px rgb(230, 191, 149);
+	box-shadow: 10px 10px 20px 2px rgb(64, 6, 88); 
 }
 .single-movie .movie-desc {
 	opacity: 1;
@@ -85,13 +85,13 @@
 	justify-content: space-around;
 	align-items: flex-start;
 	margin: 0.5em; 
-	padding: 1.5em;
-	border: 2px solid rgba(243, 181, 164, 0.8); 
-	background-color: rgba(252, 240, 206, 0.8);
+	padding: 2em;
+	border: 2px solid rgba(45, 21, 59, 0.8); 
+	background-color: rgba(163, 92, 183, 0.8);
 	border-radius: 10px; 
 	width: 15em; 
 	list-style: none; 
-	box-shadow: 10px 10px 20px 2px rgb(230, 191, 149); 
+	box-shadow: 10px 10px 20px 2px rgb(64, 6, 88); 
 	animation-name: fall-in;
 	animation-duration: 1s;
 	animation-fill-mode: both;

@@ -4,9 +4,13 @@
 	justify-content: center;
 	align-items: center;
 	padding: 2em; 
-	margin: 2em 0em; 
+	margin: 1em 0em; 
 	animation: fade-in 1000ms; 
 	animation-fill-mode: forwards;
+}
+
+.home-header {
+	font-size: 30px;
 }
 
 @keyframes fade-in {
@@ -16,4 +20,9 @@
 	100% {
 		opacity: 1; 
 	}
+}
+
+.movie-text {
+	font-size:3em;
+	margin: 0; 
 }

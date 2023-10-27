@@ -51,10 +51,6 @@ export function getGenreData() {
 				}, 
 				y: {
 					beginAtZero: true,
-					title: {
-						display: true, 
-						text: 'Genre'
-					}
 				}
 			}
 			

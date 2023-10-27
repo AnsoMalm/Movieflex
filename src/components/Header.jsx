@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<header>
 			<div className='header-movie'>
-				<h1 className='movie-flex'>MovieFlex</h1>
+				<h1 className='movie-flex'>MovieStats</h1>
 			</div>
 			<nav>
 					<NavLink to="/">Home</NavLink>

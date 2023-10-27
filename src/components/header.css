@@ -1,7 +1,7 @@
 header {
 	padding: 2em; 
 	box-sizing: border-box;
-	width: 100vw;
+	width: 100%;
 	background-color: black;
 }
 .movie-flex {
@@ -17,29 +17,33 @@ header {
 
 .header-movie {
 	width: 50%; 
+	overflow: hidden;
+	
 }
 
 .header-movie .movie-flex {
-	animation: movieflex 4s forwards cubic-bezier(.60,0.40,.2,2);
+	animation: movieflex 6s forwards cubic-bezier(.60,0.30,.2,2);
 	left: auto;
 	top: auto; 
+
+	/*cubic-bezier(.60,0.40,.2,2)*/
 } 
 
 @keyframes movieflex {
 	0% {
 		opacity: 0;
-		transform: translateX(-15em) skewX(45deg);
+		transform: translateX(-8em) skewX(45deg);
 	  }
 	  15%, 25% {
-		transform: translateX(-20em) skewX(30deg);
+		transform: translateX(-10em) skewX(30deg);
 		opacity: 1;
 	  }
 	  85%, 90% {
-		transform: translateX(20em) scale(80%);
+		transform: translateX(8em) scale(80%);
 		opacity: 1;
 	  }
 	  100% {
-		transform: translateX(20em) scale(200%);
+		transform: translateX(15em) scale(200%);
 		opacity: 1;
 	  }
 }

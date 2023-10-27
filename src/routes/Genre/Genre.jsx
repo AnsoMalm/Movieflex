@@ -42,8 +42,10 @@ const movieGenre = () => {
 		<>
 			<div>
 				<section className='genre-container-doughnut'>
-					<h2 className='genre-text'>Här är genrer i feature-filmer!</h2>
-					<Doughnut data={doughnutGenreConfig} />
+					<h2 className='genre-text'>Genrer i våra features-filmer:</h2>
+					<div className='doughnut-container'>
+						<Doughnut data={doughnutGenreConfig} />
+					</div>
 				</section>
 				<section className='button-container'>
 					<motion.button 
@@ -66,8 +68,10 @@ const movieGenre = () => {
 				</section>
 			</div>
 			<section className='genre-container2'>
-				<h2 className='genre-text'>Här har vi alla våra genrer!</h2>
-				<Bar data={barGenreConfig} options={barGenreConfig.options}/>
+				<h2 className='genre-text'>Statestik på alla våra genrer:</h2>
+				<div className='bar-container'>
+					<Bar data={barGenreConfig} options={barGenreConfig.options}/>
+				</div>
 			</section>
 		</>
 	)
